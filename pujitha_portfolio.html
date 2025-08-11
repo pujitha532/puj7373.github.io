@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pujitha Challagulla — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #94a3b8;
+      --accent: #7c3aed;
+      --glass: rgba(255,255,255,0.04);
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: #e6eef8;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 20px; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+    }
+    nav ul li { font-weight: 600; color: var(--muted); }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+    .hero-text h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .hero-text p {
+      color: var(--muted);
+    }
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .section-title {
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h2>Pujitha Challagulla</h2>
+        <div style="color: var(--muted);">Full Stack Developer | 5+ Years Experience</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm Pujitha</h1>
+        <p>Full Stack Developer experienced in building scalable web applications, RESTful APIs, and microservices. Skilled in Java, Spring Boot, Angular, ReactJS, and cloud platforms like AWS, Azure, and GCP.</p>
+      </div>
+      <div class="card">
+        <strong>Contact:</strong>
+        <p>Email: puj7373@gmail.com</p>
+        <p>Phone: +1-940-758-2905</p>
+        <p><a href="https://www.linkedin.com/in/challagulla-pujitha-4b217a378/">LinkedIn</a></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        Full Stack Developer with 5+ years of experience in Java, J2EE, Spring Boot, Hibernate, and modern JavaScript frameworks. Proficient in building single-page applications, scalable backend systems, and delivering high-quality software in Agile environments.
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="card">Languages: Java, JavaScript (ES6+), TypeScript, Python, C#, Ruby, Golang</div>
+        <div class="card">Frameworks: Spring Boot, Hibernate, Angular, React, React Native, Redux</div>
+        <div class="card">Databases: Oracle, MySQL, PostgreSQL, MongoDB, Cassandra, Redis</div>
+        <div class="card">Cloud/DevOps: AWS, Azure, GCP, Docker, Kubernetes, Jenkins</div>
+        <div class="card">Testing: Selenium, Cypress, JUnit, TestNG</div>
+        <div class="card">Tools: Git, Maven, Jira, Figma, Tableau</div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="card">
+        <h3>Virta Health — SDE (July 2023 – Present)</h3>
+        <ul>
+          <li>Developed full stack solutions with Spring Boot and Angular.</li>
+          <li>Built modular frontend applications with ReactJS, Redux, and TypeScript.</li>
+          <li>Implemented caching with Redis, improving performance by 30%.</li>
+          <li>Maintained CI/CD pipelines using GitLab, Jenkins, Maven.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Truist — Senior Software Engineer (June 2023 – March 2024)</h3>
+        <ul>
+          <li>Designed REST APIs, integrated Git with Jenkins for automation.</li>
+          <li>Provisioned AWS infrastructure using CloudFormation and Terraform.</li>
+          <li>Developed microservices with Spring Boot and NodeJS.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <div class="card">
+          <strong>Warehouse Management System</strong>
+          <p>Designed database schema, optimized queries and triggers for performance.</p>
+        </div>
+        <div class="card">
+          <strong>Housing Management System</strong>
+          <p>Web-based app built with Java, Spring Boot, HTML, and CSS for property and lease management.</p>
+        </div>
+        <div class="card">
+          <strong>NYC Street Tree Census Report</strong>
+          <p>Dashboard in Tableau highlighting species health and issues based on census data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        Email: <a href="mailto:puj7373@gmail.com">puj7373@gmail.com</a><br>
+        Phone: +1-940-758-2905<br>
+        LinkedIn: <a href="https://www.linkedin.com/in/challagulla-pujitha-4b217a378/">Profile</a>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 Pujitha Challagulla — All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
